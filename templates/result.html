@@ -5,9 +5,10 @@
     </head>
     <body>
         <h2>Submitted Info</h2>
-        <p>First Name: {{first_name}}</p>
-        <p>Last Name: {{last_name}}</p>
-        <p>Location: {{location}}</p>
-        <p>comment: {{comment}}</p>
+        <p>First Name: {{request.form['first_name']}}</p>
+        <p>Last Name: {{request.form['last_name']}}</p>
+        <p>Email: {{request.form['email']}}</p>
+        <p>Location: {{request.form['location']}}</p>
+        <p>comment: {{request.form['comment']}}</p>
     </body>
 </html>
